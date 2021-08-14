@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <container class="w-9/12 bg-gray-100 mx-auto grid lg:grid-cols-3 sm:grid-rows-3 lg:grid-rows-1 text-white gap-8 mt-20 p-4">
+        <div class="bg-yellow-400 p-6 text-center">
+            <h1 class="text-5xl">deposit</h1>
+            <p class=" text-6xl">$<span id="deposit-balance">00</span></p>
+        </div>
+        <div class="bg-blue-600 p-4 text-center">
+            <h1 class="text-5xl">withdraw</h1>
+            <p class=" text-6xl">$<span id="withdraw-balance">00</span></p>
+        </div>
+        <div class="bg-green-500 p-4 text-center">
+            <h1 class="text-5xl">total balance</h1>
+            <p class=" text-6xl">$<span id="total-balance">2000</span></p>
+        </div>
+
+    </container>
+
+    <container class="w-9/12 mx-auto lg:grid sm:grid lg:grid-cols-2 text-white sm:gap-4 mt-20 p-4 sm:grid-rows-2 lg:grid-rows-1">
+        <div class="bg-yellow-400 pl-14 p-10 m-10">
+            <h1 class="text-5xl text-black">deposit money</h1>
+            <input class="block border my-2 p-2 text-black" id="user-deposit" type="number" placeholder="deposit money">
+
+            <button class="block bg-blue-300 px-6 text-black py-3 my-4 font-bold rounded text-2xl" id="deposit-button">deposit</button>
+        </div>
+        <div class="bg-yellow-400 pl-14 p-10 m-10">
+            <h1 class="text-5xl text-black">withdraw</h1>
+            <input class="block border my-2 p-2 text-black" id="user-withdraw" type="number" placeholder="withdraw money">
+
+            <button class="block bg-blue-300 px-6 text-black py-3 my-4 font-bold rounded text-2xl" id="withdraw-button">withdraw</button>
+        </div>
+    </container>
+
+
+    <!-- scripting -->
+    <script src="bank.js"></script>
+</body>
+
+</html>
